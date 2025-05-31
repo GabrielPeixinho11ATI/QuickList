@@ -141,5 +141,13 @@ main {
         label{
             cursor: pointer;
         }
+
+        div:has(input:checked) {
+            .custom-checkbox {
+                background: var(--color-brand);
+                border: 1px solid var(--color-brand);
+                transition: background .2s ease;
+            }
+        }
     }
 }
